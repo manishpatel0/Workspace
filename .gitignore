@@ -1,7 +1,7 @@
 # making bin file 
 run.sh
 run.exe
-
+*run
 
 # Prerequisites
 *.d
