@@ -86,5 +86,32 @@ void show(struct Node* node){
 
 int main(){
 
+	struct Node *poly1=NULL;
+	struct Node *poly2=NULL;
+	struct Node *poly=	(struct Node*) malloc(sizeof(struct Node));
+
+// first
+	create_node(5,2,&poly1);
+	create_node(4,1,&poly1);
+	create_node(2,0,&poly1);
+// second
+	create_node(5,1,&poly2);
+	create_node(5,0,&poly2);
+
+	printf("1st Number: \n");
+	show(poly1);
+
+	printf("\n2nd Number: \n");
+	show(poly2);
+
+	// fun add two
+	polyadd(poly1,poly2,poly);
+
+	//Display list
+	printf("\n Addd polynomial\n");
+	show(poly);
+
+
+	
 	return 0;
 }
