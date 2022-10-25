@@ -19,5 +19,11 @@ void create_node(int x, int y, struct Node **temp){
 		r= r->next;
 		r->next = NULL;
 	}
-	
+	else {
+		r->coeff = x;
+		r->pow = y;
+		r->next = (struct Node*)malloc(sizeof(struct Node));
+		r= r->next;
+		r->next = NUll;
+	}
 }
